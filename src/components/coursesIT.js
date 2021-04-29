@@ -1,0 +1,22 @@
+import React from 'react'
+
+class CoursesIT extends React.Component{
+    render(){
+        return(
+
+        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block" />
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="/course-detail">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+)
+    }
+}
+
+export default CoursesIT;
