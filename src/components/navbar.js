@@ -7,7 +7,7 @@ class Navbar extends React.Component{
             <div>
                 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="index.html"><strong>ELAB.ASIA</strong></a>
+    <a class="navbar-brand font-tertiary h3" href="/"><strong>ELAB.ASIA</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,8 +24,8 @@ class Navbar extends React.Component{
         <li class="nav-item">
           <Link to={{pathname: '/post-list', fromDashboard: false}} class="nav-link">Мероприятия</Link>
         </li>
-        <li class="nav-item">
-          <Link to={{pathname: '/courses-list1', fromDashboard: false}} class="nav-link">Наши курсы</Link>
+        <li class="nav-item" style = {{background:'green'}}>
+          <Link to={{pathname: '/courses-list1', fromDashboard: false}} class="nav-link">Курсы</Link>
         </li>
         <li class="nav-item">
           <Link to={{pathname: 'contact', fromDashboard: false}} class="nav-link">Контакты</Link>

@@ -4,12 +4,20 @@ import axios from "axios";
 
 function Popular({match}) {
 
+  var i;
+var divs = document.getElementsByTagName('p');
+for(i=0;i<divs.length;i++) {
+  if(divs[i].className == 'cars-text') {
+    divs[i].innerHTML = divs[i].innerHTML.substring(0,80);
+  }
+}
+
   const [event, setData] = useState([]);
 
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://127.0.0.1:8000/api/most/`
+      url: `https://8t-corporation.com/api/most/`
     }).then(response => {
       setData(response.data)
     })

@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import Almagul from './Almagul.jpeg'
+
 import logo from '../logo.svg';
 import '../App.css'
 
@@ -13,39 +15,14 @@ class OurReviews extends React.Component{
               <div class="col-12 text-center"><h2 class="section-title text-white mb-5">Наши отзывы</h2></div>
                 <div class="col-lg-10 mx-auto testimonial-slider">
                   <div class="text-center testimonial-content">
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit
-                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+                    <p class="text-white mb-4">Мы видим высокий профессионализм команды и огромный потенциал. Уверены, что <strong>наша совместная деятельность пойдет во благо развития образования Казахстана.</strong></p>
+                    <img class="img-fluid rounded-circle mb-4 d-inline-block" src={Almagul}
                       alt="client-image" />
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
+                    <h4 class="text-white">Алмагуль Кенесхановна,</h4>
+                    <h6 class="text-light mb-4">Вице - президент НАО МОН РК</h6>
                   </div>
-                  <div class="text-center testimonial-content">
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
-                      voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
-                      alt="client-image" />
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
-                  </div>
-                  <div class="text-center testimonial-content">
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-                        ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
-                      voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
-                      alt="client-image" />
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
-                  </div>
+                  
+                  
                 </div>
               </div>
             </div>

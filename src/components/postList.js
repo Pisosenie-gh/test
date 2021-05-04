@@ -4,12 +4,20 @@ import axios from "axios";
 
 function Posts({match}) {
 
+  var i;
+var divs = document.getElementsByTagName('p');
+for(i=0;i<divs.length;i++) {
+  if(divs[i].className == 'cars-text') {
+    divs[i].innerHTML = divs[i].innerHTML.substring(0,80);
+  }
+}
+
   const [event, setData] = useState([]);
 
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://127.0.0.1:8000/api/mer/`
+      url: `https://8t-corporation.com/api/mer/`
     }).then(response => {
       setData(response.data)
     })
@@ -28,7 +36,7 @@ function Posts({match}) {
                 <article class="card shadow">
                   <img class="rounded card-img-top" src={c.image} alt="post-thumb"/>
                   <div class="card-body">
-                    <h4 class="card-title"><a class="text-dark" href="blog-single.html">{c.name}</a>
+                    <h4 class="card-title"><Link class="text-dark" to = {{pathname: `post-detail/${c.id}`, fromDashboard: false}}>{c.name}</Link>
                     </h4>
                     <p class="cars-text">{c.description}</p>
                     <Link to = {{pathname: `post-detail/${c.id}`, fromDashboard: false}}

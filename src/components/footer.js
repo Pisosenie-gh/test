@@ -31,7 +31,7 @@ handleSubmit(event)  {
 
      axios({
             method: "POST",
-            url: `http://127.0.0.1:8000/api/form/`,
+            url: `https://8t-corporation.com/form/`,
             data: {
               name: this.state.name,
               email: this.state.email,
@@ -73,7 +73,7 @@ handleSubmit(event)  {
       </div>
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Контакная форма</h4>
+          <h4 class="mb-80">Свяжись с нами</h4>
           <form  class="row">
             <div class="col-md-6">
               <input type="text"  onChange = {this.onChange} value = {this.state.name}  name="name" placeholder="Ф.И.О." class="form-control px-0 mb-4" />
@@ -102,14 +102,16 @@ handleSubmit(event)  {
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
           <p class="text-white paragraph-lg font-secondary">elab.shakha@gmail.com</p>
+          <p class="text-white paragraph-lg font-secondary">elab.vladimir@gmail.com</p>
         </div>
         <div class="col-md-4">
-          <h5 class="text-light">Номер телефона</h5>
-          <p class="text-white paragraph-lg font-secondary">+777777777</p>
+          <h5 class="text-light">Контактные данные</h5>
+          <p class="text-white paragraph-lg font-secondary">+7 (776) 149 2925</p>
+          <p class="text-white paragraph-lg font-secondary">+7 (708) 212 0070</p>
         </div>
         <div class="col-md-4">
           <h5 class="text-light">Адрес</h5>
-          <p class="text-white paragraph-lg font-secondary">Казахстан, г. Алматы, Ауезовский район, Аксай 5, Дом 25</p>
+          <p class="text-white paragraph-lg font-secondary">Казахстан, г. Алматы, Ауэзовский район, Аксай 5, Дом 25</p>
         </div>
       </div>
     </div>
@@ -118,7 +120,7 @@ handleSubmit(event)  {
     <p class="mb-0 text-light">Copyright ©<script>
         var CurrentYear = new Date().getFullYear()
         document.write(CurrentYear)
-      </script> by <a href="elab.asia">elab.asia</a></p>
+      </script> by <a href="/">elab.asia</a></p>
   </div>
 </footer>
 

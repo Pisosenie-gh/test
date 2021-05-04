@@ -17,7 +17,7 @@ function CoursesList3(){
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://127.0.0.1:8000/api/blog/`
+      url: `https://8t-corporation.com/api/blog/`
     }).then(response => {
       setData(response.data)
     })
